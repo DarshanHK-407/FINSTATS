@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>FIN📊STATS</title>
 
 <style>
@@ -16,25 +18,30 @@
 
 body{
     background:#020617;
-    color:#ffffff;
+    color:white;
 }
+
+/* HERO */
 
 .hero{
     text-align:center;
-    padding:80px 20px;
-    background:linear-gradient(180deg,#020617,#071224);
+    padding:80px 30px;
+    background:linear-gradient(
+        180deg,
+        #020617,
+        #071224
+    );
 }
 
 .logo{
-    font-size:72px;
+    font-size:75px;
     font-weight:900;
-    color:#ffffff;
     margin-bottom:20px;
-    text-shadow:0 0 15px rgba(95,168,255,0.20);
+    color:white;
 }
 
 .hero h2{
-    color:#6db8ff;
+    color:#67b7ff;
     font-size:42px;
     margin-bottom:15px;
 }
@@ -44,19 +51,25 @@ body{
     font-size:20px;
 }
 
-.card{
-    width:90%;
-    max-width:1100px;
-    margin:25px auto;
+/* CARDS */
+
+.container{
+    max-width:1200px;
+    margin:auto;
     padding:30px;
+}
+
+.card{
     background:#0a0f1c;
     border:1px solid #13213a;
-    border-radius:16px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.35);
+    border-radius:18px;
+    padding:30px;
+    margin-bottom:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.35);
 }
 
 .card h2{
-    color:#5fa8ff;
+    color:#67b7ff;
     margin-bottom:15px;
 }
 
@@ -70,41 +83,53 @@ body{
     padding-left:20px;
 }
 
-button{
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+/* BUTTONS */
+
+.btn{
     background:#0f3d75;
     color:white;
     border:none;
     padding:12px 20px;
     border-radius:8px;
     cursor:pointer;
-    margin:5px;
     font-size:15px;
+    margin-top:10px;
 }
 
-button:hover{
-    background:#154c91;
+.btn:hover{
+    background:#1656a8;
 }
 
 input[type=file]{
     width:100%;
-    margin-top:15px;
     padding:12px;
+    margin-top:15px;
     border-radius:8px;
+    border:1px solid #1f2937;
     background:#111827;
     color:white;
-    border:1px solid #1f2937;
 }
+
+/* CONTACT */
 
 .contact p{
     margin-bottom:10px;
 }
 
+/* FOOTER */
+
 footer{
-    background:#030712;
     text-align:center;
+    background:#030712;
     padding:25px;
-    margin-top:40px;
     color:#9ca3af;
+    margin-top:30px;
 }
 
 </style>
@@ -114,90 +139,112 @@ footer{
 
 <section class="hero">
 
-    <div class="logo">
-        FIN📊STATS
-    </div>
+<div class="logo">
+FIN📊STATS
+</div>
 
-    <h2>Welcome to FIN📊STATS</h2>
+<h2>Welcome to FIN📊STATS</h2>
 
-    <p>
-        Transforming Financial Data Into Actionable Business Insights
-    </p>
+<p>
+Transforming Financial Data Into Actionable Business Insights
+</p>
 
 </section>
 
+<div class="container">
+
 <div class="card">
 
-    <h2>About FIN📊STATS</h2>
+<h2>About FIN📊STATS</h2>
 
-    <p>
-        FIN📊STATS provides Financial Reporting,
-        Business Analytics, KPI Dashboards,
-        Forecasting, Budget Planning, SAP Reporting,
-        Excel Automation and Data Visualization solutions.
-    </p>
+<p>
+FIN📊STATS is a Financial Analytics and Reporting platform focused on
+Business Insights, Forecasting, KPI Monitoring, Budget Planning,
+Management Reporting, SAP Reporting, Excel Automation, and Data Visualization.
+</p>
 
 </div>
 
 <div class="card">
 
-    <h2>Services</h2>
+<h2>Our Services</h2>
 
-    <ul>
-        <li>Financial Reporting</li>
-        <li>Business Analytics</li>
-        <li>KPI Dashboards</li>
-        <li>Forecasting</li>
-        <li>Budget Planning</li>
-        <li>SAP Reporting</li>
-        <li>Excel Automation</li>
-        <li>Management Reporting</li>
-        <li>Data Visualization</li>
-    </ul>
+<ul>
+<li>Financial Reporting</li>
+<li>Business Analytics</li>
+<li>KPI Dashboard Development</li>
+<li>Forecasting & Planning</li>
+<li>Management Reporting</li>
+<li>SAP Reporting Solutions</li>
+<li>Excel Automation</li>
+<li>Data Visualization</li>
+<li>Performance Monitoring</li>
+</ul>
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+
+<h2>📑 Reports Center</h2>
+
+<p>
+Upload and manage financial reports, Excel files, PDFs and reporting packs.
+</p>
+
+<input type="file">
+
+<br>
+
+<button class="btn">
+View Reports
+</button>
 
 </div>
 
 <div class="card">
 
-    <h2>Reports & Files</h2>
+<h2>📊 Dashboard Center</h2>
 
-    <button onclick="alert('Reports Module Coming Soon')">
-        📑 View Reports
-    </button>
+<p>
+Upload dashboard files and track business performance metrics.
+</p>
 
-    <button onclick="alert('Dashboard Module Coming Soon')">
-        📊 Dashboard
-    </button>
+<input type="file">
 
-    <br><br>
+<br>
 
-    <label><b>Upload Reports / Files</b></label>
+<button class="btn">
+Open Dashboard
+</button>
 
-    <input type="file">
-
-    <p style="margin-top:10px;">
-        Upload Excel, CSV, PDF and Financial Reports.
-    </p>
+</div>
 
 </div>
 
 <div class="card contact">
 
-    <h2>Contact Information</h2>
+<h2>Contact Information</h2>
 
-    <p><strong>Name:</strong> Darshan H K</p>
+<p><strong>Name:</strong> Darshan H K</p>
 
-    <p><strong>Phone:</strong> +91 8431152407</p>
+<p><strong>Phone:</strong> +91 8431152407</p>
 
-    <p><strong>Email:</strong> darshan.h-k@siemens.com</p>
+<p><strong>Email:</strong> darshan.h-k@siemens.com</p>
 
-    <p><strong>Location:</strong> Bengaluru, India</p>
+<p><strong>Location:</strong> Bengaluru, India</p>
+
+</div>
 
 </div>
 
 <footer>
-    © 2026 FIN📊STATS | Created by Darshan H K
+
+© 2026 FIN📊STATS | Financial Analytics & Reporting Platform
+
 </footer>
 
 </body>
+
 </html>
