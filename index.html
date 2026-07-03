@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>FIN📊STATS</title>
 
 <style>
@@ -16,34 +14,60 @@
     font-family:'Segoe UI',sans-serif;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     background:#020617;
     color:white;
 }
 
-/* HERO */
+/* Navigation */
+
+nav{
+    background:#030712;
+    padding:18px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:100;
+    box-shadow:0 2px 10px rgba(0,0,0,0.5);
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#60a5fa;
+}
+
+/* Hero */
 
 .hero{
     text-align:center;
-    padding:80px 30px;
+    padding:90px 20px;
     background:linear-gradient(
-        180deg,
-        #020617,
-        #071224
+    180deg,
+    #020617,
+    #071224
     );
 }
 
 .logo{
-    font-size:75px;
+    font-size:70px;
     font-weight:900;
     margin-bottom:20px;
-    color:white;
 }
 
-.hero h2{
-    color:#67b7ff;
-    font-size:42px;
+.hero h1{
+    color:#60a5fa;
     margin-bottom:15px;
+    font-size:48px;
 }
 
 .hero p{
@@ -51,7 +75,7 @@ body{
     font-size:20px;
 }
 
-/* CARDS */
+/* Sections */
 
 .container{
     max-width:1200px;
@@ -65,18 +89,17 @@ body{
     border-radius:18px;
     padding:30px;
     margin-bottom:25px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.35);
 }
 
 .card h2{
-    color:#67b7ff;
+    color:#60a5fa;
     margin-bottom:15px;
 }
 
 .card p,
 .card li{
-    color:#d1d5db;
     line-height:1.8;
+    color:#d1d5db;
 }
 
 .card ul{
@@ -85,11 +108,9 @@ body{
 
 .grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
     gap:20px;
 }
-
-/* BUTTONS */
 
 .btn{
     background:#0f3d75;
@@ -98,38 +119,28 @@ body{
     padding:12px 20px;
     border-radius:8px;
     cursor:pointer;
-    font-size:15px;
     margin-top:10px;
 }
 
 .btn:hover{
-    background:#1656a8;
+    background:#1b5fb8;
 }
 
 input[type=file]{
     width:100%;
-    padding:12px;
     margin-top:15px;
-    border-radius:8px;
-    border:1px solid #1f2937;
+    padding:10px;
     background:#111827;
+    border:1px solid #1f2937;
     color:white;
+    border-radius:8px;
 }
-
-/* CONTACT */
-
-.contact p{
-    margin-bottom:10px;
-}
-
-/* FOOTER */
 
 footer{
-    text-align:center;
     background:#030712;
+    text-align:center;
     padding:25px;
-    color:#9ca3af;
-    margin-top:30px;
+    color:#94a3b8;
 }
 
 </style>
@@ -137,13 +148,22 @@ footer{
 
 <body>
 
-<section class="hero">
+<nav>
+    #home
+    #about
+    #servicesServices</a>
+    #reports
+    #dashboard
+    #contact
+</nav>
+
+<section id="home" class="hero">
 
 <div class="logo">
-FIN📊STATS
+    FIN📊STATS
 </div>
 
-<h2>Welcome to FIN📊STATS</h2>
+<h1>Welcome to FIN📊STATS</h1>
 
 <p>
 Transforming Financial Data Into Actionable Business Insights
@@ -153,49 +173,57 @@ Transforming Financial Data Into Actionable Business Insights
 
 <div class="container">
 
+<section id="about">
+
 <div class="card">
 
 <h2>About FIN📊STATS</h2>
 
 <p>
 FIN📊STATS is a Financial Analytics and Reporting platform focused on
-Business Insights, Forecasting, KPI Monitoring, Budget Planning,
-Management Reporting, SAP Reporting, Excel Automation, and Data Visualization.
+KPI Tracking, Forecasting, Budget Planning, Business Analytics,
+SAP Reporting, Management Reporting and Data Visualization.
 </p>
 
 </div>
 
+</section>
+
+<section id="services">
+
 <div class="card">
 
-<h2>Our Services</h2>
+<h2>Services</h2>
 
 <ul>
 <li>Financial Reporting</li>
 <li>Business Analytics</li>
 <li>KPI Dashboard Development</li>
 <li>Forecasting & Planning</li>
-<li>Management Reporting</li>
-<li>SAP Reporting Solutions</li>
+<li>Budget Planning</li>
+<li>SAP Reporting</li>
 <li>Excel Automation</li>
+<li>Management Reporting</li>
 <li>Data Visualization</li>
-<li>Performance Monitoring</li>
 </ul>
 
 </div>
 
+</section>
+
 <div class="grid">
+
+<section id="reports">
 
 <div class="card">
 
 <h2>📑 Reports Center</h2>
 
 <p>
-Upload and manage financial reports, Excel files, PDFs and reporting packs.
+Upload and manage Financial Reports, PDFs, Excel files and Reporting Packs.
 </p>
 
 <input type="file">
-
-<br>
 
 <button class="btn">
 View Reports
@@ -203,17 +231,19 @@ View Reports
 
 </div>
 
+</section>
+
+<section id="dashboard">
+
 <div class="card">
 
 <h2>📊 Dashboard Center</h2>
 
 <p>
-Upload dashboard files and track business performance metrics.
+Access KPI Dashboards and upload dashboard-related files.
 </p>
 
 <input type="file">
-
-<br>
 
 <button class="btn">
 Open Dashboard
@@ -221,9 +251,13 @@ Open Dashboard
 
 </div>
 
+</section>
+
 </div>
 
-<div class="card contact">
+<section id="contact">
+
+<div class="card">
 
 <h2>Contact Information</h2>
 
@@ -237,14 +271,13 @@ Open Dashboard
 
 </div>
 
+</section>
+
 </div>
 
 <footer>
-
 © 2026 FIN📊STATS | Financial Analytics & Reporting Platform
-
 </footer>
 
 </body>
-
 </html>
