@@ -3,113 +3,200 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FINSTATS</title>
+<title>FIN📊STATS</title>
 
 <style>
-body{
+
+*{
     margin:0;
-    font-family:Arial,sans-serif;
-    background:linear-gradient(to bottom,#000814,#003566);
-    color:white;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#020617;
+    color:#ffffff;
 }
 
 .hero{
     text-align:center;
-    padding:50px 20px;
+    padding:80px 20px;
+    background:linear-gradient(180deg,#020617,#071224);
 }
 
 .logo{
-    width:220px;
-    max-width:80%;
-    border-radius:15px;
-    box-shadow:0 0 20px rgba(255,215,0,0.2);
+    font-size:72px;
+    font-weight:900;
+    color:#ffffff;
+    margin-bottom:20px;
+    text-shadow:0 0 15px rgba(95,168,255,0.20);
 }
 
-.hero h1{
-    color:#4da6ff;
-    font-size:52px;
-    margin-top:25px;
+.hero h2{
+    color:#6db8ff;
+    font-size:42px;
+    margin-bottom:15px;
 }
 
 .hero p{
-    font-size:22px;
-    color:#e5f0ff;
+    color:#cbd5e1;
+    font-size:20px;
 }
 
 .card{
-    width:85%;
-    max-width:1000px;
+    width:90%;
+    max-width:1100px;
     margin:25px auto;
-    background:#071b39;
-    padding:25px;
-    border-radius:15px;
+    padding:30px;
+    background:#0a0f1c;
+    border:1px solid #13213a;
+    border-radius:16px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.35);
 }
 
 .card h2{
-    color:#4da6ff;
+    color:#5fa8ff;
+    margin-bottom:15px;
 }
 
+.card p,
 .card li{
-    margin:10px 0;
+    color:#d1d5db;
+    line-height:1.8;
+}
+
+.card ul{
+    padding-left:20px;
+}
+
+button{
+    background:#0f3d75;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    margin:5px;
+    font-size:15px;
+}
+
+button:hover{
+    background:#154c91;
+}
+
+input[type=file]{
+    width:100%;
+    margin-top:15px;
+    padding:12px;
+    border-radius:8px;
+    background:#111827;
+    color:white;
+    border:1px solid #1f2937;
+}
+
+.contact p{
+    margin-bottom:10px;
 }
 
 footer{
+    background:#030712;
     text-align:center;
-    padding:20px;
-    background:#001122;
-    margin-top:30px;
+    padding:25px;
+    margin-top:40px;
+    color:#9ca3af;
 }
+
 </style>
 </head>
 
 <body>
 
-<div class="hero">
+<section class="hero">
 
-" alt="FINSTATS Logo" class="logo">
+    <div class="logo">
+        FIN📊STATS
+    </div>
 
-<h1>Welcome to FINSTATS</h1>
-
-<p>
-Financial Analytics, Reporting, Forecasting and Business Insights
-</p>
-
-</div>
-
-<div class="card">
-    <h2>About FINSTATS</h2>
+    <h2>Welcome to FIN📊STATS</h2>
 
     <p>
-    FINSTATS provides Financial Reporting, Business Analytics,
-    KPI Dashboards, Forecasting, Budget Planning and Management Reporting.
+        Transforming Financial Data Into Actionable Business Insights
     </p>
+
+</section>
+
+<div class="card">
+
+    <h2>About FIN📊STATS</h2>
+
+    <p>
+        FIN📊STATS provides Financial Reporting,
+        Business Analytics, KPI Dashboards,
+        Forecasting, Budget Planning, SAP Reporting,
+        Excel Automation and Data Visualization solutions.
+    </p>
+
 </div>
 
 <div class="card">
-    <h2>Our Services</h2>
+
+    <h2>Services</h2>
 
     <ul>
         <li>Financial Reporting</li>
         <li>Business Analytics</li>
         <li>KPI Dashboards</li>
+        <li>Forecasting</li>
+        <li>Budget Planning</li>
         <li>SAP Reporting</li>
         <li>Excel Automation</li>
-        <li>Budget Planning</li>
-        <li>Forecasting</li>
+        <li>Management Reporting</li>
+        <li>Data Visualization</li>
     </ul>
+
 </div>
 
 <div class="card">
+
+    <h2>Reports & Files</h2>
+
+    <button onclick="alert('Reports Module Coming Soon')">
+        📑 View Reports
+    </button>
+
+    <button onclick="alert('Dashboard Module Coming Soon')">
+        📊 Dashboard
+    </button>
+
+    <br><br>
+
+    <label><b>Upload Reports / Files</b></label>
+
+    <input type="file">
+
+    <p style="margin-top:10px;">
+        Upload Excel, CSV, PDF and Financial Reports.
+    </p>
+
+</div>
+
+<div class="card contact">
+
     <h2>Contact Information</h2>
 
-    <p><b>Name:</b> Darshan H K</p>
-    <p><b>Phone:</b> +91 8431152407</p>
-    <p><b>Email:</b> darshan.h-k@siemens.com</p>
-    <p><b>Location:</b> Bengaluru, India</p>
+    <p><strong>Name:</strong> Darshan H K</p>
+
+    <p><strong>Phone:</strong> +91 8431152407</p>
+
+    <p><strong>Email:</strong> darshan.h-k@siemens.com</p>
+
+    <p><strong>Location:</strong> Bengaluru, India</p>
+
 </div>
 
 <footer>
-© 2026 FINSTATS | Created by Darshan H K
+    © 2026 FIN📊STATS | Created by Darshan H K
 </footer>
 
 </body>
